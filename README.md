@@ -8,7 +8,7 @@ Simply add MSSToggleSwitch.h/.m to your project and you'll be good to go!
 
 Here's a basic "On"/"Off" switch:
 
-    self.toggle 			= [[MSSToggleSwitch alloc] init];
+    self.toggle                         = [[MSSToggleSwitch alloc] init];
     self.toggle.borderColor             = [UIColor lightGrayColor];
     self.toggle.borderWidth             = 1.0f;
     self.toggle.leftBackgroundColor     = [UIColor colorWithRed:0.0f green:0.8f blue:0.0f alpha:1.0f];
@@ -28,7 +28,8 @@ Here's a basic "On"/"Off" switch:
 Here's how you'd execute condition code to run concurrent with the "swap" animation:
 
     self.toggle.animationBlock = ^{
-
+        // Whatever code you put in here will execute alongside the 
+        // thumb switch animation
     };
 
 Have a look at ViewController.h/.m in the demo project to see a basic implementation.
